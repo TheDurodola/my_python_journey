@@ -1,7 +1,5 @@
-print("\t\t MULTIPLICATION TABLE")
-for horizontal in range(1,13):
-	print(horizontal, end='  ')
-for horizontal in range(1,13):
-	print("\n",horizontal)
-
+for i in range(1,13):
+	for j in range(1,13):
+		print(i*j, end='\t')
+	print("")
 
