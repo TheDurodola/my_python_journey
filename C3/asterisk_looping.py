@@ -13,6 +13,7 @@ print()
 for loop in range(11):
 	for looping in range(loop):
 		print('', end=' ')
-	for loopin in range(6):
-		print('*')
+	
+	for loop in range(11):
+		print('*', end='')
 	print(' ')
