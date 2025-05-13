@@ -1,5 +1,18 @@
-
-
-for loop in range(10):
+for loop in range(11):
 	for looping in range(loop):
 		print('*', end='')
+	print(" ")
+print()
+for loop in range(11,0,-1):
+	for looping in range(loop):
+		print('*',end='')
+	print(" ")
+	
+print()
+
+for loop in range(11):
+	for looping in range(loop):
+		print('', end=' ')
+	for loopin in range(6):
+		print('*')
+	print(' ')
