@@ -1,3 +1,5 @@
+#Ex 3.8
+
 
 sum=0
 product=1
