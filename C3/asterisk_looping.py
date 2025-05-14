@@ -1,3 +1,5 @@
+#Ex 3.17
+
 for loop in range(11):
 	for looping in range(loop):
 		print('*', end='')
