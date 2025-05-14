@@ -1,4 +1,4 @@
-#Ex 3.1
+#Ex 3.5
 
 print('Enter two integers, and I will tell you','the relationships they satisfy.')
 
