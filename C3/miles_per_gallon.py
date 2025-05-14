@@ -6,7 +6,7 @@ while stop_program != -1:
 	miles_driven = float(input("Enter the miles driven: "))
 	miles_gallons = miles_driven/gallons_used
 	print(miles_gallons)
-	stop_program = int(input("Enter to -1 stop the program: "))
+	stop_program = int(input("Enter -1 to stop the program OR enter any other number to continue: "))
 	loop_count=loop_count+1
 	total=total+miles_gallons
 
