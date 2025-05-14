@@ -6,8 +6,11 @@ for loop in range(1,NUMBER_OF_ASTERISK):
 	#print(" ")
 	for looping in range(loop,NUMBER_OF_ASTERISK):
 		print(' ', end='')
-	for looping in range(1):
-		print(' ')
+	for loop in range(11,9,-1):
+		for looping in range(loop):
+			print('*',end='')
+	print(" ")
 
 
+	
 	
