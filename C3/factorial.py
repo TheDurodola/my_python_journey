@@ -1,3 +1,6 @@
+
+#Ex 3.13
+
 number = int(input("Enter the number: "))
 number_result = number
 factorial = 1;
