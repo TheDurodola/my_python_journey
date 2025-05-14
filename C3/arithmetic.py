@@ -1,29 +1,30 @@
 #Ex 3.8
 
 
-sum=0
-product=1
-largest = 0
-smallest = 0
 
-for run in range(4):
-	number = int(input(f"Enter the {run+1} number: "))
-	
-	first_number=number
+
+first_number = int(input("Enter number 1: "))
+
+smallest= first_number
+largest= first_number
+sum = first_number
+product= first_number
+
+for run in range(1,4):
+	number = int(input(f"Enter number {run+1}: "))		
 	sum = sum+number
 	product = product*number
 	average = sum/(run+1)
 	if number>largest: 
 		largest=number
-	if number<first_number:
+	if number<smallest:
 		smallest=number
 
 print(f"\nThe Sum of the {run+1} integers is ", sum)
 print(f"The Product of the {run+1} integers is ", product)
 print(f"The Average of the {run+1} integers is ",average)
-print(largest)
-print(smallest)
-
+print(f"The Largest integer amongst the four is ",largest)
+print(f"The Smallest integer amongst the four is ", smallest)
 
 
 """
