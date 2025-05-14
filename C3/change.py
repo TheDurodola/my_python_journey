@@ -1,3 +1,5 @@
+#Ex 3.21
+
 print("Note: Client pays with a Dollar(1 Dollar= 100 cents)")
 purchase_price = int(input('Enter the purchase price(in CENTS): '))
 
