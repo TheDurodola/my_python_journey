@@ -1,3 +1,7 @@
+#Ex 3.7
+
+
+
 number= 1
 print("Number\tSquare\tcube")
 for number in range(6):
