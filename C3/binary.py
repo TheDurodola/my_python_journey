@@ -1,3 +1,5 @@
+#Ex 3.20
+
 binary = int(input("Enter your binary number: "))
 initial_binary = binary
 expo = len(str(binary))
