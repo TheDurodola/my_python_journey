@@ -1,3 +1,5 @@
+#Ex 3.22
+
 for i in range(2):
 	value = int(input('Enter an integer (-1 to break): '))
 	print('You entered:', value)
