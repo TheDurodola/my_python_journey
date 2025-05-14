@@ -1,3 +1,6 @@
+#Ex 3.6
+
+
 input("What is your problem? ")
 
 question = input("Have you had this problem before(yes or no)? ")
