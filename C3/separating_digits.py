@@ -1,3 +1,6 @@
+#Ex 3.9
+
+
 """
 PROMPT the user to enter a five digits number and store as number
 intialize divisor to 10000
