@@ -1,6 +1,4 @@
-print("Enter a number between 1-10,000\n")
-
-number = int(input("Enter your number: "))
+number = int(input("Enter your number between 1-10,000: "))
 
 finalnum=number
 sum = 0
