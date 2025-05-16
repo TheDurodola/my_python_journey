@@ -16,5 +16,5 @@ def add_digits(number):
 	return sum
 
 
-digits = int(input("Enter your number: "))
+digits = int(input("Enter your number between 1-10,000: "))
 print("The sum of every digits is", add_digits(digits))
