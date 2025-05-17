@@ -30,7 +30,7 @@ def main_menu():
 	if navigate == 5:
 		tones_menu()
 	if navigate == 6:
-		chat_menu()
+		settings_menu()
 	if navigate == 7:
 		call_divert_menu()
 	if navigate == 8:
@@ -722,5 +722,445 @@ def memory_status_menu():
 	if navigate == 0:
 		options_menu()
 
+def settings_menu():
+	display = """
+1 => Call settings
+2 => Phone settings
+3 => Security settings
+4 => Restore factory settings
 
-	
+0 =>  Back"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 1:
+		call_settings_menu()
+	if navigate == 2:
+		phone_settings_menu()
+	if navigate == 3:
+		security_settings_menu()
+	if navigate == 4:
+		restore_factory_settings_menu()
+	if navigate == 0:
+		main_menu()
+
+def settings_menu():
+	display = """
+1 => Call settings
+2 => Phone settings
+3 => Security settings
+4 => Restore factory settings
+
+0 =>  Back"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 1:
+		call_settings_menu()
+	if navigate == 2:
+		phone_settings_menu()
+	if navigate == 3:
+		security_settings_menu()
+	if navigate == 4:
+		restore_factory_settings_menu()
+	if navigate == 0:
+		main_menu()
+
+def call_settings_menu():
+	display = """
+╔════════════════════════╗
+║     Call settings      ║
+╠════════════════════════╣
+║ > 1. Automatic redial  ║
+║   2. Speed dialling    ║
+║   3. Call waiting      ║
+║   4. Own number sending║
+║   5. Phone line in use ║
+║   6. Automatic answer  ║
+╠════════════════════════╣
+║   [Select]  [0.Back]   ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		settings_menu()
+	if navigate == 1:
+		automatic_redial_menu()
+	if navigate == 2:
+		speed_dialling_menu()
+	if navigate == 3:
+		call_waiting_menu()
+	if navigate == 4:
+		own_number_sending_menu()
+	if navigate == 5:
+		phone_line_in_use_menu()
+	if navigate == 6:
+		automatic_answer_menu()
+
+def automatic_redial_menu():
+	display = """
+╔════════════════════════╗
+║   Automatic redial     ║
+╠════════════════════════╣
+║ > On                   ║
+║   Off                  ║
+╠════════════════════════╣
+║   [Select]  [0.Back]   ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		call_settings_menu()
+
+def speed_dialling_menu():
+	display = """
+╔════════════════════════╗
+║    Speed dialling      ║
+╠════════════════════════╣
+║ > On                   ║
+║   Off                  ║
+╠════════════════════════╣
+║   [Select]  [0.Back]   ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		call_settings_menu()
+
+
+def call_waiting_menu():
+	display = """
+╔════════════════════════╗
+║  Call waiting options  ║
+╠════════════════════════╣
+║ > Activate             ║
+║   Cancel               ║
+║   Check status         ║
+╠════════════════════════╣
+║   [Select]  [0.Back]   ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		call_settings_menu()
+
+def own_number_sending_menu():
+	display = """
+╔════════════════════════╗
+║  Own number sending    ║
+╠════════════════════════╣
+║ > Set by network       ║
+║   On                   ║
+║   Off                  ║
+╠════════════════════════╣
+║   [Select]  [0.Back]   ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		call_settings_menu()
+
+
+def phone_line_in_use_menu():
+	display = """
+╔════════════════════════╗
+║  Phone line in use     ║
+╠════════════════════════╣
+║ > Line 1               ║
+║   Line 2               ║
+╠════════════════════════╣
+║   [Select]  [0.Back]   ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		call_settings_menu()
+
+
+def automatic_answer_menu():
+	display = """
+╔════════════════════════╗
+║   Automatic answer     ║
+╠════════════════════════╣
+║ > On                   ║
+║   Off                  ║
+║ (Only with headset)    ║
+╠════════════════════════╣
+║   [Select]  [0.Back]   ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		call_settings_menu()
+
+def phone_settings_menu():
+	display = """
+╔═════════════════════════╗
+║     Phone settings      ║
+╠═════════════════════════╣
+║ > 1. Language           ║
+║   2. Cell info display  ║
+║   3. Welcome note       ║
+║   4. Network selection  ║
+║   5. Lights             ║
+║   6. Confirm SIM actions║
+╠═════════════════════════╣
+║     [Select]  [0.Back]  ║
+╚═════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 1:
+		language_menu()
+	if navigate == 2:
+		cell_info_display_menu()
+	if navigate == 3:
+		welcome_note_menu()
+	if navigate == 4:
+		network_selection_menu()
+	if navigate == 5:
+		lights_menu()
+	if navigate == 6:
+		confirm_sim_service_actions_menu()
+	if navigate == 0:
+		settings_menu()
+
+def language_menu():
+	display = """
+╔════════════════════════╗
+║        Language        ║
+╠════════════════════════╣
+║ > English              ║
+║   Français             ║
+║   Deutsch              ║
+║   Español              ║
+╠════════════════════════╣
+║   [Select]  [0.Back]   ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		phone_settings_menu()
+
+def cell_info_display_menu():
+	display = """
+╔════════════════════════╗
+║   Cell info display    ║
+╠════════════════════════╣
+║ > On                   ║
+║   Off                  ║
+╠════════════════════════╣
+║   [Select]  [0.Back]   ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		phone_settings_menu()
+
+def welcome_note_menu():
+	display = """
+╔════════════════════════╗
+║      Welcome note      ║
+╠════════════════════════╣
+║ Message:               ║
+║ “Hello!”               ║
+║                        ║
+╠════════════════════════╣
+║   [Edit] [0.Back]      ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		phone_settings_menu()
+
+def network_selection_menu():
+	display = """
+╔════════════════════════╗
+║   Network selection    ║
+╠════════════════════════╣
+║ > Automatic            ║
+║   Manual               ║
+╠════════════════════════╣
+║   [Select]  [0.Back]   ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		phone_settings_menu()
+
+def lights_menu():
+	display = """
+╔════════════════════════╗
+║         Lights         ║
+╠════════════════════════╣
+║ > On                   ║
+║   Off                  ║
+╠════════════════════════╣
+║   [Select]  [0.Back]   ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		phone_settings_menu()
+
+def confirm_sim_service_actions_menu():
+	display = """
+╔════════════════════════╗
+║ Confirm SIM actions    ║
+╠════════════════════════╣
+║ > On                   ║
+║   Off                  ║
+╠════════════════════════╣
+║   [Select]  [0.Back]   ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		phone_settings_menu()
+
+def security_settings_menu():
+	display = """
+╔═════════════════════════╗
+║   Security settings     ║
+╠═════════════════════════╣
+║ > 1. PIN code request   ║
+║   2. Call barring       ║
+║   3. Fixed dialling     ║
+║   4. Closed user group  ║
+║   5. Phone security     ║
+║   6. Change access codes║
+╠═════════════════════════╣
+║     [Select]  [0.Back]  ║
+╚═════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 1:
+		pin_code_request_menu()
+	if navigate == 2:
+		call_barring_service_menu()
+	if navigate == 3:
+		fixed_dialling_menu()
+	if navigate == 4:
+		closed_user_group_menu()
+	if navigate == 5:
+		phone_security_menu()
+	if navigate == 6:
+		change_access_code_menu()
+	if navigate == 0:
+		settings_menu()
+
+
+def pin_code_request_menu():
+	display = """
+╔════════════════════════╗
+║    PIN code request    ║
+╠════════════════════════╣
+║ > On                   ║
+║   Off                  ║
+╠════════════════════════╣
+║ Enter PIN: ____        ║
+║     [OK]     [0.Back]  ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		security_settings_menu()
+
+
+def call_barring_service_menu():
+	display = """
+╔════════════════════════╗
+║  Call barring service  ║
+╠════════════════════════╣
+║ > Outgoing calls       ║
+║   Incoming calls       ║
+║   Cancel all barrings  ║
+║   Change barring code  ║
+╠════════════════════════╣
+║   [Select]  [0.Back]   ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		security_settings_menu()
+
+def fixed_dialling_menu():
+	display = """
+╔════════════════════════╗
+║     Fixed dialling     ║
+╠════════════════════════╣
+║ > On                   ║
+║   Off                  ║
+║   Edit fixed list      ║
+╠════════════════════════╣
+║ PIN2: ____             ║
+║   [OK]     [0.Back]    ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		security_settings_menu()
+
+def closed_user_group_menu():
+	display = """
+╔════════════════════════╗
+║   Closed user group    ║
+╠════════════════════════╣
+║ > Default              ║
+║   Group 1              ║
+║   Group 2              ║
+╠════════════════════════╣
+║   [Select]  [0.Back]   ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		security_settings_menu()
+
+def phone_security_menu():
+	display = """
+╔════════════════════════╗
+║     Phone security     ║
+╠════════════════════════╣
+║ > On                   ║
+║   Off                  ║
+╠════════════════════════╣
+║ Code: ____             ║
+║     [OK]   [0.Back]    ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		security_settings_menu()
+
+def change_access_code_menu():
+	display = """
+╔════════════════════════╗
+║  Change access codes   ║
+╠════════════════════════╣
+║ > Change PIN           ║
+║   Change PIN2          ║
+║   Change security code ║
+╠════════════════════════╣
+║   [Select]  [0.Back]   ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		security_settings_menu()
+
+
+def restore_factory_settings_menu():
+	display = """
+╔═════════════════════════╗
+║ Restore factory settings║
+╠═════════════════════════╣
+║ Restore all settings?   ║
+║                         ║
+║ Code: ______            ║
+╠═════════════════════════╣
+║    [OK]      [0.Back]   ║
+╚═════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		settings_menu()
+
+
