@@ -36,11 +36,11 @@ def main_menu():
 	if navigate == 8:
 		games_menu()
 	if navigate == 9:
-		chat_menu()
+		calculator_menu()
 	if navigate == 10:
-		chat_menu()
+		reminders_menu()
 	if navigate == 11:
-		chat_menu()
+		clock_menu()
 	if navigate == 12:
 		profiles_menu()
 	if navigate == 13:
@@ -193,7 +193,7 @@ def ringing_tones_menu():
 
 """
 	print(ringing_tones)
-	navigate = int(input("Enter a nuber to move: "))
+	navigate = int(input("Enter a number to move: "))
 	if navigate == 0:
 		tones_menu()
 	
@@ -210,7 +210,7 @@ def ringing_volume_menu():
 
 """
 	print(ringing_volume)
-	navigate = int(input("Enter a nuber to move: "))
+	navigate = int(input("Enter a number to move: "))
 	if navigate == 0:
 		tones_menu()
 
@@ -229,7 +229,7 @@ def incoming_call_alert_menu():
 ╚════════════════════════╝
 """
 	print(display)
-	navigate = int(input("Enter a nuber to move: "))
+	navigate = int(input("Enter a number to move: "))
 	if navigate == 0:
 		tones_menu()
 
@@ -245,7 +245,7 @@ def composer_menu():
 ║  [Play]      [0. Back] ║
 ╚════════════════════════╝"""
 	print(display)
-	navigate = int(input("Enter a nuber to move: "))
+	navigate = int(input("Enter a number to move: "))
 	if navigate == 0:
 		tones_menu()
 
@@ -262,7 +262,7 @@ def message_alert_tone_menu():
 ║  [Select]   [0. Back]  ║
 ╚════════════════════════╝"""
 	print(display)
-	navigate = int(input("Enter a nuber to move: "))
+	navigate = int(input("Enter a number to move: "))
 	if navigate == 0:
 		tones_menu()
 
@@ -280,7 +280,7 @@ def keypad_tones_menu():
 ║  [Select]   [0. Back]  ║
 ╚════════════════════════╝"""
 	print(display)
-	navigate = int(input("Enter a nuber to move: "))
+	navigate = int(input("Enter a number to move: "))
 	if navigate == 0:
 		tones_menu()
 
@@ -298,7 +298,7 @@ def warning_and_game_tones_menu():
 ║  [Select]   [0. Back]  ║
 ╚════════════════════════╝"""
 	print(display)
-	navigate = int(input("Enter a nuber to move: "))
+	navigate = int(input("Enter a number to move: "))
 	if navigate == 0:
 		tones_menu()
 
@@ -314,7 +314,7 @@ def vibrating_alert_menu():
 ║   [Select]   [0.Back]  ║
 ╚════════════════════════╝"""
 	print(display)
-	navigate = int(input("Enter a nuber to move: "))
+	navigate = int(input("Enter a number to move: "))
 	if navigate == 0:
 		tones_menu()
 
@@ -332,10 +332,46 @@ def screen_saver_menu():
 ║  [Select]   [0. Back]  ║
 ╚════════════════════════╝"""
 	print(display)
-	navigate = int(input("Enter a nuber to move: "))
+	navigate = int(input("Enter a number to move: "))
 	if navigate == 0:
 		tones_menu()
 
+
+def calculator_menu():
+	display = """
+╔════════════════════════╗
+║        Calculator      ║
+╠════════════════════════╣
+║     0                  ║
+║                        ║
+╠════════════════════════╣
+║  [1][2][3]  [+]        ║
+║  [4][5][6]  [-]        ║
+║  [7][8][9]  [×]        ║
+║  [0][C][=]  [÷]        ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		main_menu()
+
+
+def reminders_menu():
+	display = """
+╔════════════════════════╗
+║        Reminders       ║
+╠════════════════════════╣
+║ > Meeting @ 3PM        ║
+║   Take meds @ 8PM      ║
+║   Call Sarah           ║
+║                        ║
+╠════════════════════════╣
+║[View] [New] [0. Back]  ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		main_menu()
 
 def clock_menu():
 	display = """
@@ -346,3 +382,116 @@ def clock_menu():
 5 => Countdown timer
 6 => Auto update of date and time
 """
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 1:
+		alarm_clock_menu()
+	if navigate == 2:
+		clock_settings_menu()
+	if navigate == 3:
+		date_setting_menu()
+	if navigate == 4:
+		stopwatch_menu()
+	if navigate == 5:
+		countdown_timer_menu()
+	if navigate == 6:
+		auto_update_of_date_and_time_menu()
+
+def alarm_clock_menu():
+	display = """
+╔════════════════════════╗
+║       Alarm clock      ║
+╠════════════════════════╣
+║ > On                   ║
+║   Off                  ║
+║                        ║
+║ Time: 06:30 AM         ║
+╠════════════════════════╣
+║   [Select]   [0.Back]  ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		clock_menu()
+
+def clock_settings_menu():
+	display = """
+╔════════════════════════╗
+║     Clock settings     ║
+╠════════════════════════╣
+║ Time: 14:35            ║
+║ Format: 24-hour        ║
+╠════════════════════════╣
+║   [Change]   [0. Back] ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		clock_menu()
+
+def date_setting_menu():
+	display = """
+╔════════════════════════╗
+║      Date setting      ║
+╠════════════════════════╣
+║ Date: 17/05/2025       ║
+║ Format: DD/MM/YYYY     ║
+╠════════════════════════╣
+║   [Edit]     [0.Back]  ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		clock_menu()
+
+def stopwatch_menu():
+	display = """
+╔════════════════════════╗
+║        Stopwatch       ║
+╠════════════════════════╣
+║        00:00:00        ║
+║                        ║
+╠════════════════════════╣
+║ [Start] [Split][0.Back]║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		clock_menu()
+
+def countdown_timer_menu():
+	display = """
+╔════════════════════════╗
+║     Countdown timer    ║
+╠════════════════════════╣
+║ Set time: 00:05:00     ║
+║                        ║
+╠════════════════════════╣
+║   [Start]   [0. Back]  ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		clock_menu()
+
+def auto_update_of_date_and_time_menu():
+	display = """
+╔════════════════════════╗
+║Auto update of date/time║
+╠════════════════════════╣
+║ > On                   ║
+║   Off                  ║
+╠════════════════════════╣
+║   [Select]   [0. Back] ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		clock_menu()
+
+
+
+
+
+
+	
