@@ -26,7 +26,7 @@ def main_menu():
 	if navigate == 3:
 		chat_menu()
 	if navigate == 4:
-		chat_menu()
+		call_register_menu()
 	if navigate == 5:
 		tones_menu()
 	if navigate == 6:
@@ -1496,3 +1496,335 @@ def delivery_reports():
 	if navigate == 0:
 		common_menu()
 
+
+
+def call_register_menu():
+	display = """
+1 => Missed calls
+2 => Received calls
+3 => Dialled numbers
+4 => Erase recent call lists
+5 => Show call duration
+6 => Show call costs
+7 => Call cost settings
+8 => Prepaid credit
+
+0 =>  Back"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 1:
+		missed_calls()
+	if navigate == 2:
+		received_calls()
+	if navigate == 3:
+		dialled_numbers()
+	if navigate == 4:
+		erase_recent_call_lists()
+	if navigate == 5:
+		show_call_duration()
+	if navigate == 6:
+		show_call_cost()
+	if navigate == 7:
+		call_cost_settings()
+	if navigate == 8:
+		prepaid_credit()
+
+
+	if navigate ==0:
+		main_menu()
+
+
+
+
+def show_call_duration():
+	display = """
+1 => Last call duration
+2 => All calls' duration
+3 => Received calls' duration
+4 => Dialled calls' duration
+5 => Clear timers
+
+0 =>  Back"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 1:
+		last_call_duration()
+	if navigate == 2:
+		all_calls_duration()
+	if navigate == 3:
+		received_calls_duration()
+	if navigate == 4:
+		dialled_calls_duration()
+	if navigate == 5:
+		clear_timers()
+	if navigate == 0:
+		call_register_menu()
+
+
+def show_call_cost():
+	display = """
+1 => Last call cost
+2 => All calls' cost
+3 => Clear counterss
+
+0 =>  Back"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 1:
+		last_call_cost()
+	if navigate == 2:
+		all_calls_cost()
+	if navigate == 3:
+		clear_counter()
+	if navigate == 0:
+		call_register_menu()
+
+def call_cost_settings():
+	display = """
+1 => Call cost limit
+2 => Show costs in
+
+0 =>  Back"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 1:
+		call_cost_limit()
+	if navigate == 2:
+		show_costs_in()
+	if navigate == 0:
+		call_register_menu()
+
+
+def missed_calls():
+	display = """
+╔═════════════════════════╗
+║       Missed calls      ║
+╠═════════════════════════╣
+║ > John  12:45 PM        ║
+║   +12345678  11:20 AM   ║
+║   Unknown  9:00 AM      ║
+╠═════════════════════════╣
+║     [Options]  [Back]   ║
+╚═════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		call_register_menu()
+
+
+def received_calls():
+	display = """
+╔═════════════════════════╗
+║     Received calls      ║
+╠═════════════════════════╣
+║ > Mum  1:15 PM          ║
+║   Office  10:00 AM      ║
+╠═════════════════════════╣
+║     [Options]  [Back]   ║
+╚═════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		call_register_menu()
+
+
+
+def dialled_numbers():
+	display = """
+╔═════════════════════════╗
+║    Dialled numbers      ║
+╠═════════════════════════╣
+║ > +987654321  2:00 PM   ║
+║   Sarah  12:10 PM       ║
+╠═════════════════════════╣
+║     [Options]  [Back]   ║
+╚═════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		call_register_menu()
+
+
+
+def prepaid_credit():
+	display = """
+╔════════════════════════╗
+║      Prepaid credit    ║
+╠════════════════════════╣
+║ Balance: $18.75        ║
+║ Last top-up: $10.00    ║
+║ Valid until: 25/06/25  ║
+╠════════════════════════╣
+║     [Top-up]  [Back]   ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		call_register_menu()
+
+
+
+def erase_recent_call_lists():
+	display = """
+╔════════════════════════╗
+║Erase recent call lists ║
+╠════════════════════════╣
+║ > All call lists       ║
+║   Missed calls         ║
+║   Received calls       ║
+║   Dialled numbers      ║
+╠════════════════════════╣
+║    [Erase]   [Back]    ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		call_register_menu()
+
+
+def last_call_duration():
+	display = """
+╔════════════════════════╗
+║   Last call duration   ║
+╠════════════════════════╣
+║ 00:03:45               ║
+╠════════════════════════╣
+║       [OK]             ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		show_call_duration()
+
+
+def all_calls_duration():
+	display = """
+╔════════════════════════╗
+║  All calls duration    ║
+╠════════════════════════╣
+║ 01:23:17               ║
+╠════════════════════════╣
+║       [OK]             ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		show_call_duration()
+
+def received_calls_duration():
+	display = """
+╔════════════════════════╗
+║ Received calls duration║
+╠════════════════════════╣
+║ 00:42:09               ║
+╠════════════════════════╣
+║       [OK]             ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		show_call_duration()
+
+def dialled_calls_duration():
+	display = """
+╔════════════════════════╗
+║ Dialled calls duration ║
+╠════════════════════════╣
+║ 00:41:08               ║
+╠════════════════════════╣
+║       [OK]             ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		show_call_duration()
+
+def clear_timers():
+	display = """
+╔════════════════════════╗
+║      Clear timers      ║
+╠════════════════════════╣
+║ Security code: __      ║
+╠════════════════════════╣
+║   [Clear]    [Back]    ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		show_call_duration()
+
+def last_call_cost():
+	display = """
+╔════════════════════════╗
+║     Last call cost     ║
+╠════════════════════════╣
+║ $0.52                  ║
+╠════════════════════════╣
+║       [OK]             ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		show_call_cost()	
+
+def all_calls_cost():
+	display = """
+╔════════════════════════╗
+║    All calls' cost     ║
+╠════════════════════════╣
+║ $24.15                 ║
+╠════════════════════════╣
+║       [OK]             ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		show_call_cost()
+
+
+def clear_counter():
+	display = """
+╔════════════════════════╗
+║     Clear counters     ║
+╠════════════════════════╣
+║ Security code: __      ║
+╠════════════════════════╣
+║   [Clear]    [Back]    ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		show_call_cost()
+
+
+def call_cost_limit():
+	display = """
+╔════════════════════════╗
+║    Call cost limit     ║
+╠════════════════════════╣
+║ Limit: $50.00          ║
+╠════════════════════════╣
+║  [Change]   [Back]     ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		call_cost_settings()
+
+def show_costs_in():
+	display = """
+╔════════════════════════╗
+║     Show costs in      ║
+╠════════════════════════╣
+║ > Currency             ║
+║   Units                ║
+╠════════════════════════╣
+║    [Select]  [Back]    ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		call_cost_settings()
+
+
+	
