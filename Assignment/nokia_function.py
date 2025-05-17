@@ -20,7 +20,7 @@ def main_menu():
 	print(main_menu)
 	navigate = int(input("Enter a number to move: "))
 	if navigate == 1:
-		chat_menu()
+		phonebook_menu()
 	if navigate == 2:
 		chat_menu()
 	if navigate == 3:
@@ -491,7 +491,236 @@ def auto_update_of_date_and_time_menu():
 
 
 
+def phonebook_menu():
+	display = """
+1 =>  Search
+2 =>  Service Nos.
+3 =>  Add name
+4 =>  Erase
+5 =>  Edit
+6 =>  Assign tone
+7 =>  Send b'card
+8 =>  Options
+9 =>  Speed dials
+10 => Voice tags
 
+0 =>  Back"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		main_menu()
+	if navigate == 1:
+		search_menu()
+	if navigate == 2:
+		service_nos_menu()
+	if navigate == 3:
+		add_name_menu()
+	if navigate == 4:
+		erase_menu()
+	if navigate == 5:
+		edit_menu()
+	if navigate == 6:
+		assign_tone_menu()
+	if navigate == 7:
+		send_bcard_menu()
+	if navigate == 8:
+		options_menu()
+	if navigate == 9:
+		speed_dials_menu()
+	if navigate == 10:
+		voice_tags_menu()
+
+def search_menu():
+	display = """
+╔════════════════════════╗
+║         Search         ║
+╠════════════════════════╣
+║ Find: [A__________]    ║
+║                        ║
+║ Matches:               ║
+║ > Alice                ║
+║   Andrew               ║
+╠════════════════════════╣
+║    [Find]   [0.Back]   ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		phonebook_menu()
+	
+def service_nos_menu():
+	display = """
+╔════════════════════════╗
+║      Service Nos.      ║
+╠════════════════════════╣
+║ > Voicemail            ║
+║   Customer Care        ║
+║   Balance Enquiry      ║
+╠════════════════════════╣
+║     [Call]   [0.Back]  ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		phonebook_menu()
+	
+def add_name_menu():
+	display = """
+╔════════════════════════╗
+║        Add Name        ║
+╠════════════════════════╣
+║ Name: ____________     ║
+║ Number: ____________   ║
+╠════════════════════════╣
+║    [Save]   [0.Back]   ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		phonebook_menu()
+	
+def erase_menu():
+	display = """
+╔════════════════════════╗
+║          Erase         ║
+╠════════════════════════╣
+║ > Erase “John”?        ║
+║                        ║
+╠════════════════════════╣
+║   [Yes]   [0.Back]     ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		phonebook_menu()
+	
+def edit_menu():
+	display = """
+╔════════════════════════╗
+║          Edit          ║
+╠════════════════════════╣
+║ Name: John Smith       ║
+║ Number: 07123456789    ║
+╠════════════════════════╣
+║    [Save]   [0.Back]   ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		phonebook_menu()
+	
+def assign_tone_menu():
+	display = """
+╔════════════════════════╗
+║      Assign Tone       ║
+╠════════════════════════╣
+║ Contact: Alice         ║
+║ > Nokia Tune           ║
+║   Waltz of the Demon   ║
+║   Silent               ║
+╠════════════════════════╣
+║  [Select]   [0.Back]   ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		phonebook_menu()
+	
+def send_bcard_menu():
+	display = """
+╔════════════════════════╗
+║       Send B’card      ║
+╠════════════════════════╣
+║ > Send “David”?        ║
+║ Via: Infrared          ║
+║      SMS               ║
+╠════════════════════════╣
+║     [Send]    [0.Back] ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		phonebook_menu()
+	
+def options_menu():
+	display = """
+1 => Type of view
+2 => Memory status
+
+0 => Back"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		phonebook_menu()
+	if navigate == 1:
+		type_of_view_menu()
+	if navigate == 2:
+		memory_status_menu()
+	
+def speed_dials_menu():
+	display = """
+╔════════════════════════╗
+║       Speed Dials      ║
+╠════════════════════════╣
+║ 1: Voicemail           ║
+║ 2: Dad                 ║
+║ 3: Empty               ║
+╠════════════════════════╣
+║   [Assign]  [0.Back]   ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		phonebook_menu()
+	
+def voice_tags_menu():
+	display = """
+╔════════════════════════╗
+║       Voice Tags       ║
+╠════════════════════════╣
+║ > Record new tag       ║
+║   David                ║
+║   Voicemail            ║
+╠════════════════════════╣
+║   [Record] [0.Back]    ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		phonebook_menu()
+	
+
+def type_of_view_menu():
+	display = """
+╔════════════════════════╗
+║      Type of view      ║
+╠════════════════════════╣
+║ > Name list            ║
+║   Name & number        ║
+║   Name only            ║
+╠════════════════════════╣
+║  [Select]   [0.Back]   ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		options_menu()
+
+def memory_status_menu():
+	display = """
+╔════════════════════════╗
+║     Memory status      ║
+╠════════════════════════╣
+║ Used:     22           ║
+║ Free:     78           ║
+║ Total:   100           ║
+╠════════════════════════╣
+║   [OK]    [0.Back]     ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		options_menu()
 
 
 	
