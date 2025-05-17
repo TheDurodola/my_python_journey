@@ -22,7 +22,7 @@ def main_menu():
 	if navigate == 1:
 		phonebook_menu()
 	if navigate == 2:
-		chat_menu()
+		messages_menu()
 	if navigate == 3:
 		chat_menu()
 	if navigate == 4:
@@ -1163,4 +1163,336 @@ def restore_factory_settings_menu():
 	if navigate == 0:
 		settings_menu()
 
+def messages_menu():
+	display ="""
+╔═════════════════════════╗
+║       Messages          ║
+╠═════════════════════════╣
+║ > 1. Write messages     ║
+║   2. Inbox              ║
+║   3. Outbox             ║
+║   4. Picture messages   ║
+║   5. Templates          ║
+║   6. Smileys            ║
+║   7. Messages Settings  ║
+║   8. Info service       ║
+║   9. Voice mailbox no.  ║
+║  10. Service cmd editor ║
+╠═════════════════════════╣
+║     [Select]  [0.Back]  ║
+╚═════════════════════════╝
+"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 1:
+		write_messages_menu()
+	if navigate == 2:
+		inbox_menu()
+	if navigate == 3:
+		outbox_menu()
+	if navigate == 4:
+		picture_messages_menu()
+	if navigate == 5:
+		templates_menu()
+	if navigate == 6:
+		smileys_menu()
+	if navigate == 7:
+		messages_settings_menu()
+	if navigate == 8:
+		info_services_menu()
+	if navigate == 9:
+		voice_mailbox_number_menu()
+	if navigate == 10:
+		service_command_editor_menu()
+	if navigate == 0:
+		main_menu()
+
+
+def write_messages_menu():
+	display = """
+╔════════════════════════╗
+║     Write message      ║
+╠════════════════════════╣
+║ To: ____________       ║
+║                        ║
+║ Msg:                   ║
+║ Hello! How are you?    ║
+╠════════════════════════╣
+║   [Send] [0.Back]      ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		messages_menu()
+
+
+def inbox_menu():
+	display = """
+╔═════════════════════════╗
+║          Inbox          ║
+╠═════════════════════════╣
+║ > 1 New Message         ║
+║   2 Yesterday           ║
+║   3 Last week           ║
+╠═════════════════════════╣
+║     [Open]    [0.Back]  ║
+╚═════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		messages_menu()
+
+def outbox_menu():
+	display = """
+╔════════════════════════╗
+║         Outbox         ║
+╠════════════════════════╣
+║ > Msg to Mum           ║
+║   Msg to Office        ║
+║   Msg failed           ║
+╠════════════════════════╣
+║     [Open]    [0.Back] ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		messages_menu()
+
+def picture_messages_menu():
+	display = """
+╔════════════════════════╗
+║   Picture messages     ║
+╠════════════════════════╣
+║ > Birthday Cake        ║
+║   Happy Face           ║
+║   Love You             ║
+╠════════════════════════╣
+║     [Select]  [0.Back] ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		messages_menu()
+
+def templates_menu():
+	display = """
+╔════════════════════════╗
+║        Templates       ║
+╠════════════════════════╣
+║ > I’m in a meeting     ║
+║   Call you later       ║
+║   Happy Birthday!      ║
+╠════════════════════════╣
+║     [Use]     [0.Back] ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		messages_menu()
+
+def smileys_menu():
+	display = """
+╔════════════════════════╗
+║         Smileys        ║
+╠════════════════════════╣
+║ > :-)     Happy        ║
+║   :-(     Sad          ║
+║   ;-)     Wink         ║
+╠════════════════════════╣
+║     [Insert]  [0.Back] ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		messages_menu()
+
+def info_services_menu():
+	display = """
+╔════════════════════════╗
+║      Info service      ║
+╠════════════════════════╣
+║ > Headlines            ║
+║   Weather              ║
+║   Network alerts       ║
+╠════════════════════════╣
+║     [View]    [0.Back] ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		messages_menu()
+
+def voice_mailbox_number_menu():
+	display = """
+╔════════════════════════╗
+║  Voice mailbox number  ║
+╠════════════════════════╣
+║ Number: +1234567890    ║
+╠════════════════════════╣
+║    [Edit]     [0.Back] ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		messages_menu()
+
+def service_command_editor_menu():
+	display = """
+╔════════════════════════╗
+║ Service cmd editor     ║
+╠════════════════════════╣
+║ Command: *#06#         ║
+║                        ║
+╠════════════════════════╣
+║   [Send]     [0.Back]  ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		messages_menu()
+
+
+def messages_settings_menu():
+	display = """
+1 => Set
+2 => Common
+
+0 =>  Back"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 1:
+		set_menu()
+	if navigate == 2:
+		common_menu()
+	if navigate ==0:
+		messages_menu()
+
+def set_menu():
+	display = """
+1 => Message centre number
+2 => Messages sent as 
+3 => Message validity
+
+0 =>  Back"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 1:
+		message_centre_number()
+	if navigate == 2:
+		messages_sent_as()
+	if navigate ==3:
+		message_validity()
+	if navigate ==0:
+		messages_settings_menu()
+
+def message_centre_number():
+	display = """
+╔════════════════════════╗
+║  Message centre number ║
+╠════════════════════════╣
+║ +1234567890            ║
+╠════════════════════════╣
+║   [Edit]     [0.Back]  ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		set_menu()
+
+def messages_sent_as():
+	display = """
+╔════════════════════════╗
+║     Message sent as    ║
+╠════════════════════════╣
+║ > Text                 ║
+║   Fax                  ║
+║   Paging               ║
+╠════════════════════════╣
+║   [Select]   [0.Back]  ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		set_menu()
+
+def message_validity():
+	display = """
+╔════════════════════════╗
+║    Message validity    ║
+╠════════════════════════╣
+║ > 1 hour               ║
+║   6 hours              ║
+║   24 hours             ║
+║   1 week               ║
+╠════════════════════════╣
+║   [Select]   [0.Back]  ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		set_menu()
+
+
+def common_menu():
+	display = """
+1 => Delivery reports
+2 => Reply via same centre
+3 => Character support
+
+0 =>  Back"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 1:
+		delivery_reports()
+	if navigate == 2:
+		reply_via_same_centre()
+	if navigate ==3:
+		character_support()
+	if navigate ==0:
+		messages_settings_menu()
+
+def reply_via_same_centre():
+	display = """
+╔════════════════════════╗
+║ Reply via same centre  ║
+╠════════════════════════╣
+║ > On                   ║
+║   Off                  ║
+╠════════════════════════╣
+║     [Select] [0.Back]  ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		common_menu()
+
+def character_support():
+	display = """
+╔════════════════════════╗
+║    Character support   ║
+╠════════════════════════╣
+║ > Full                 ║
+║   Reduced              ║
+╠════════════════════════╣
+║     [Select] [0.Back]  ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		common_menu()
+
+def delivery_reports():
+	display = """
+╔════════════════════════╗
+║     Delivery reports   ║
+╠════════════════════════╣
+║ > On                   ║
+║   Off                  ║
+╠════════════════════════╣
+║     [Select] [0.Back]  ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a number to move: "))
+	if navigate == 0:
+		common_menu()
 
