@@ -157,3 +157,192 @@ def tones_menu():
 """
 	print(tones)
 	navigate = int(input("Enter a number to move: "))
+	if navigate == 1:
+		ringing_tones_menu()
+	if navigate == 2:
+		ringing_volume_menu()
+	if navigate == 3:
+		incoming_call_alert_menu()
+	if navigate == 4:
+		composer_menu()
+	if navigate == 5:
+		message_alert_tone_menu()
+	if navigate == 6:
+		keypad_tones_menu()
+	if navigate == 7:
+		warning_and_game_tones_menu()
+	if navigate == 8:
+		vibrating_alert_menu()
+	if navigate == 9:
+		screen_saver_menu()
+	if navigate == 0:
+		main_menu()
+
+def ringing_tones_menu():
+	ringing_tones ="""
+╔════════════════════════╗
+║     Ringing tone       ║
+╠════════════════════════╣
+║ > Nokia tune           ║
+║   Waltz of the Demon   ║
+║   Funky beat           ║
+║   Kickstart            ║
+╠════════════════════════╣
+║  [Select]   [0. Back]  ║
+╚════════════════════════╝
+
+"""
+	print(ringing_tones)
+	navigate = int(input("Enter a nuber to move: "))
+	if navigate == 0:
+		tones_menu()
+	
+def ringing_volume_menu():
+	ringing_volume ="""
+╔════════════════════════╗
+║    Ringing volume      ║
+╠════════════════════════╣
+║     ▓▓▓░░              ║
+║     Level: 3           ║
+╠════════════════════════╣
+║    [OK]       [0. Back]║
+╚════════════════════════╝
+
+"""
+	print(ringing_volume)
+	navigate = int(input("Enter a nuber to move: "))
+	if navigate == 0:
+		tones_menu()
+
+def incoming_call_alert_menu():
+	display ="""
+╔════════════════════════╗
+║ Incoming call alert    ║
+╠════════════════════════╣
+║ > Ringing              ║
+║   Vibrating            ║
+║   Ring once            ║
+║   Beep once            ║
+║   Silent               ║
+╠════════════════════════╣
+║   [Select]  [0. Back]  ║
+╚════════════════════════╝
+"""
+	print(display)
+	navigate = int(input("Enter a nuber to move: "))
+	if navigate == 0:
+		tones_menu()
+
+def composer_menu():
+	display ="""
+╔════════════════════════╗
+║       Composer         ║
+╠════════════════════════╣
+║ Melody: _____          ║
+║ Notes: C D E F G A B   ║
+║ Tempo: ▓▓░░            ║
+╠════════════════════════╣
+║  [Play]      [0. Back] ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a nuber to move: "))
+	if navigate == 0:
+		tones_menu()
+
+def message_alert_tone_menu():
+	display ="""
+╔════════════════════════╗
+║ Message alert tone     ║
+╠════════════════════════╣
+║ > Beep once            ║
+║   Ascending            ║
+║   Nokia tune           ║
+║   Silent               ║
+╠════════════════════════╣
+║  [Select]   [0. Back]  ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a nuber to move: "))
+	if navigate == 0:
+		tones_menu()
+
+
+def keypad_tones_menu():
+	display ="""
+╔════════════════════════╗
+║    Keyboard tones      ║
+╠════════════════════════╣
+║ > Level 1              ║
+║   Level 2              ║
+║   Level 3              ║
+║   Off                  ║
+╠════════════════════════╣
+║  [Select]   [0. Back]  ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a nuber to move: "))
+	if navigate == 0:
+		tones_menu()
+
+
+
+
+def warning_and_game_tones_menu():
+	display ="""
+╔════════════════════════╗
+║ Warning & game tones   ║
+╠════════════════════════╣
+║ > On                   ║
+║   Off                  ║
+╠════════════════════════╣
+║  [Select]   [0. Back]  ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a nuber to move: "))
+	if navigate == 0:
+		tones_menu()
+
+
+def vibrating_alert_menu():
+	display ="""
+╔════════════════════════╗
+║    Vibrating alert     ║
+╠════════════════════════╣
+║ > On                   ║
+║   Off                  ║
+╠════════════════════════╣
+║   [Select]   [0.Back]  ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a nuber to move: "))
+	if navigate == 0:
+		tones_menu()
+
+
+def screen_saver_menu():
+	display ="""
+╔════════════════════════╗
+║      Screen saver      ║
+╠════════════════════════╣
+║ > On                   ║
+║   Off                  ║
+║                        ║
+║ Current: Digital Clock ║
+╠════════════════════════╣
+║  [Select]   [0. Back]  ║
+╚════════════════════════╝"""
+	print(display)
+	navigate = int(input("Enter a nuber to move: "))
+	if navigate == 0:
+		tones_menu()
+
+
+def clock_menu():
+	display = """
+1 => Alarm clock
+2 => Clock settings
+3 => Date setting
+4 => Stopwatch
+5 => Countdown timer
+6 => Auto update of date and time
+"""
