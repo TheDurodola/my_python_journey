@@ -18,6 +18,7 @@ while counter>0:
 	print(loading_screen)
 	navigate = int(input("Enter a number to move: "))
 	if navigate==0:
+		print("GOODBYE...")
 		counter=0
 	if navigate==1:
 		nokia_function.main_menu()		
