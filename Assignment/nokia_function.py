@@ -1,4 +1,5 @@
 
+
 def main_menu():
 	main_menu = """
 1 => PhoneBook
@@ -45,9 +46,11 @@ def main_menu():
 		profiles_menu()
 	if navigate == 13:
 		sim_services_menu()
-
-
-
+	if navigate == 0:
+		print("")
+	else:
+		invalid_command()			
+	
 def chat_menu():
 	chat = """
 
@@ -66,7 +69,7 @@ def chat_menu():
 	navigate = int(input("Enter a number to move: "))
 	if navigate==0:
 		main_menu()
-
+	
 def games_menu():
 	games ="""
 ╔════════════════════════════════════════╗
@@ -85,8 +88,7 @@ def games_menu():
 	navigate = int(input("Enter a number to move: "))
 	if navigate ==0 :
 		main_menu()
-
-
+	
 def call_divert_menu():
 	call_divert = """
 ╔═════════════════════════════════╗
@@ -102,7 +104,7 @@ def call_divert_menu():
 	navigate = int(input("Enter a number to move: "))
 	if navigate == 0:
 		main_menu()
-
+	
 def sim_services_menu():
 	sim_services = """
 ╔═══════════════════════════════════╗
@@ -122,6 +124,7 @@ def sim_services_menu():
 	navigate = int(input("Enter a number to move: "))
 	if navigate == 0:
 		main_menu()
+	
 
 def profiles_menu():
 	profiles = """
@@ -142,6 +145,7 @@ def profiles_menu():
 	navigate = int(input("Enter a number to move: "))
 	if navigate == 0:
 		main_menu()
+
 
 def tones_menu():
 	tones ="""
@@ -177,7 +181,7 @@ def tones_menu():
 		screen_saver_menu()
 	if navigate == 0:
 		main_menu()
-
+	
 def ringing_tones_menu():
 	ringing_tones ="""
 ╔════════════════════════╗
@@ -1826,5 +1830,21 @@ def show_costs_in():
 	if navigate == 0:
 		call_cost_settings()
 
-
-	
+def invalid_command():
+	display = """
+╔════════════════════════╗
+║     ERROR 404     	 ║
+╠════════════════════════╣
+║ 	INVALID COMMAND  ║
+║                        ║
+║   ENTER 0 TO GO BACK   ║
+║    TO THE HOMESCREEN   ║
+╠════════════════════════╣
+║        [Back]          ║
+╚════════════════════════╝"""
+	print(display)
+	count = 1
+	while count!=0:
+		navigate = int(input("Enter a number to move: "))
+		if navigate == 0:
+			count = 0
