@@ -1833,7 +1833,7 @@ def show_costs_in():
 def invalid_command():
 	display = """
 ╔════════════════════════╗
-║     ERROR 404     	 ║
+║     ERROR 419     	 ║
 ╠════════════════════════╣
 ║ 	INVALID COMMAND  ║
 ║                        ║
