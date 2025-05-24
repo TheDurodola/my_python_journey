@@ -16,6 +16,7 @@ while main_menu_loop_condition!=1:
 1) Create Account
 2) Existing Account
 3) Menu
+4) Print all existing accounts
 0) Exit
 """
 		print(main_menu_display)
@@ -37,7 +38,9 @@ while main_menu_loop_condition!=1:
 				
 			case 3:
 				bank_app_functions.get_submenu(current_account)
-
+			case 4:
+				bank_app_functions.retrieve_all_records(bank_database)
+				
 			case 0:
 				print("\nTHANK YOU FOR USING YRSD BANK")
 				main_menu_loop_condition=1
