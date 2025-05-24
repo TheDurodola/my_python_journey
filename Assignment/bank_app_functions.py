@@ -5,11 +5,6 @@ def get_existing_account(bank_database, wanted_account):
 	for database in bank_database:
 		if wanted_account == database[0]:
 			return database
-		if wanted_account!= database[0]:
-			display =("INCORRECT ACCOUNT NUMBER")
-			return print(display)
-
-
 
 
 def get_submenu(bank_database):
@@ -71,6 +66,11 @@ def withdraw_amount(balance):
 	print(f"₦{amount_withdrawn:,} has been withdrawn from your account")
 	return balance 
 
+
+def retrieve_all_records(bank_database):
+	for index, records in enumerate(bank_database):
+		print(index, records)
+	
 	
 	
 		
