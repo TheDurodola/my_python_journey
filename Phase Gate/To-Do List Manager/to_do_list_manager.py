@@ -29,10 +29,11 @@ while menu_condition!=1:
 			to_do_list_manager_functions.mark_task_as_completed(status_of_task, list_of_task)
 
 		case 4:
-			user_input = input("Enter the number of what you would like to delete: ")
+			user_input = int(input("Enter the number of what you would like to delete: "))
 			user_input = user_input-1
 			to_do_list_manager_functions.delete_a_task(user_input, list_of_task)
 			to_do_list_manager_functions.delete_status(user_input, status_of_task)
+			print("Task Deleted!!")
 			
 		case 5:
 			menu_condition = 1
