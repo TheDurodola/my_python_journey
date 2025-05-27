@@ -1,5 +1,17 @@
 import random
 
+def create_account():
+	account_number = random.randint(1000000000,9999999999)
+	account_details = [account_number]
+	account_details.append(first_name)
+	last_name = input("Enter last name: ")
+	account_details.append(last_name)
+	account_balance = 0
+	account_details.append(account_balance)
+	return account_details
+
+
+
 
 def get_existing_account(bank_database, wanted_account):
 	for database in bank_database:
