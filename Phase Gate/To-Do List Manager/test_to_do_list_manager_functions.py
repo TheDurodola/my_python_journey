@@ -1,8 +1,8 @@
 import to_do_list_manager_functions
 from unittest import TestCase
 
-list_of_task = ['OPO']
-status_of_task = ["[]"]
+list_of_task = ['OPO','AKAMU']
+status_of_task = ["[]","[]"]
 
 class TestCube(TestCase):
 	def test_that_get_add_to_list_exist(self):
@@ -26,6 +26,22 @@ class TestCube(TestCase):
 		actual = to_do_list_manager_functions.add_to_list("33")
 		expected = "33"
 		self.assertEqual(actual,expected)
+
+	def test_that_delete_status_works(self):
+		actual = to_do_list_manager_functions.delete_status(0, status_of_task)
+		expected =  ['[]'] 
+		self.assertEqual(actual,expected)
+
+	def test_that_delete_task_works(self):
+		actual = to_do_list_manager_functions.delete_a_task(0, list_of_task)
+		expected =  ['AKAMU']
+		self.assertEqual(actual,expected)
+
+				
+
+
+	
+
 		
 
 
