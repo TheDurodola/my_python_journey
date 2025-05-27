@@ -16,11 +16,11 @@ def mark_task_as_completed(status_of_task, list_of_task):
 
 	
 def delete_a_task(user_input, list_of_task):
-	list_of_task.remove(user_input)
+	list_of_task.pop(user_input)
 	return list_of_task
 
 def delete_status(user_input, status_of_task):
-	status_of_task.remove(user_input)
+	status_of_task.pop(user_input)
 	return status_of_task
 
 
