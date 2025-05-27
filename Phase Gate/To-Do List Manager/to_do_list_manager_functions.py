@@ -5,6 +5,7 @@ def add_to_list(add_task):
 def view_all_tasks(status_of_task, list_of_task):
 	for index, status in enumerate(status_of_task):
 		print(index+1, status, list_of_task[index])
+
 	
 def mark_task_as_completed(status_of_task, list_of_task):
 	for index, task in enumerate(list_of_task):
