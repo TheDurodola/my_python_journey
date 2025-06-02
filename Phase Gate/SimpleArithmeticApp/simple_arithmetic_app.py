@@ -1,6 +1,9 @@
 import random
-
+import time
+#Time.time
 print("\t\tSIMPLE ARITHMETIC APP")
+
+start_time = time.time()
 
 outer_loop_condition = 0
 score = 0
@@ -39,3 +42,10 @@ while(outer_loop_condition<10):
 	outer_loop_condition = outer_loop_condition + 1
 
 print(f"\nYour total score is: {score}")
+end_time = time.time() - start_time
+end_time = round(end_time)
+print("Time taken is:",end_time,"seconds")
+
+
+
+
