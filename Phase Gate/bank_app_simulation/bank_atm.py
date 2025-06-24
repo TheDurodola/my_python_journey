@@ -1,6 +1,6 @@
 import bank_atm_functions
 
-account_balance = [0]
+account_balance = 0
 
 menu_loop_condition = 0
 
