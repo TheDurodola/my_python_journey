@@ -1,6 +1,6 @@
 import random
 
-from ClassWork.listfuntion import length, sum_of_items_at_even_index, sum_of_items_at_odd_index, \
+from S1.ClassWork.listfuntion import length, sum_of_items_at_even_index, sum_of_items_at_odd_index, \
     multiplication_of_items_at_every_third_position, get_average
 
 list_of_numbers = []

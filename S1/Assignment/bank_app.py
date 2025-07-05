@@ -1,5 +1,4 @@
 import bank_app_functions
-import random
 
 bank_database = []
 main_menu_loop_condition=0

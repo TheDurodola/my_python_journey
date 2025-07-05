@@ -9,7 +9,7 @@ class TestCube(TestCase):
 	
 	def test_that_withdraw_amount_exist(self):
 		account_balance = [0]
-		bank_atm_functions.withdraw_amount(account_balance,20000)	
+		bank_atm_functions.withdraw_amount(account_balance, 20000)
 
 	def test_that_view_transaction_logs_exist(self):
 		bank_atm_functions.view_transaction_logs() 

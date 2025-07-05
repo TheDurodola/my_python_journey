@@ -17,7 +17,7 @@ class TestListFunctions(unittest.TestCase):
         self.assertEqual(actual, 6)
 
     def test_get_sum_of_items_at_every_third_position_works(self):
-        expected = listfuntion.multiplication_of_items_at_every_third_position([1, 2, 3, 4, 5,6,])
+        expected = listfuntion.multiplication_of_items_at_every_third_position([1, 2, 3, 4, 5, 6, ])
         self.assertEqual(expected, 18)
 
 
