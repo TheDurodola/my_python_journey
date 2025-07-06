@@ -10,11 +10,13 @@ class Movie:
         validate_title(title)
         self.title = title
         self.date = datetime.datetime.now().time().isoformat(timespec='seconds')
-        self.rating = []
+        self.rating = [None]
 
 
 
     def rate(self, rating):
+        if self.rating[0] is None:
+            self.rating.clear()
         rating = validate_rating(rating)
         self.rating.append(rating)
 
@@ -25,6 +27,9 @@ class Movie:
 
     def get_title(self):
         return self.title
+
+    def get_date(self):
+        return self.date
 
 
 def validate_rating(rating):
