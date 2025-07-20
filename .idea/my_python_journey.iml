@@ -6,6 +6,10 @@
       <sourceFolder url="file://$MODULE_DIR$/S2/movie_rating_system_v1/test" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/S2/moviecatalogue/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/S2/moviecatalogue/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/S2/sweetInTheMiddle/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/S2/sweetInTheMiddle/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/S2/phonebook/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/S2/phonebook/test" isTestSource="true" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.13" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
