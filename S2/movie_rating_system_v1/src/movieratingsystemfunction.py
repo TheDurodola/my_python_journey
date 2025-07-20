@@ -12,6 +12,7 @@ def add_movie(movie_title):
 
     date = datetime.date.today()
     time = datetime.datetime.now().time().isoformat(timespec='seconds')
+
     initial_rating: float = 0
     rating_count = initial_rating
     movie_record = [movie_title, date, time, initial_rating, rating_count]
