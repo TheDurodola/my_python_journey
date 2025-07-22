@@ -9,3 +9,5 @@ class MovieMustCantBeOnlyWhitespace(TypeError):
 
 class MovieDoesNotExistException(ValueError):
     pass
+
+
