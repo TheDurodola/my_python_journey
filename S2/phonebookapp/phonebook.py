@@ -37,7 +37,10 @@ class Phonebook():
                 return contact.get_firstname, contact.get_lastname, contact.get_phonenumber
         return None
 
-    def edit_contact(self, old_first_name, old_last_name, new_first_name, new_last_name, new_phone_number):
+    def edit_contact(self, old_name, new_first_name, new_last_name, new_phone_number):
         for contact in self.__database:
-            if contact.get_firstname == old_first_name:
-        pass
+            if contact.get_firstname+ " "+ contact.get_lastname == old_name:
+                contact.set_firstname(new_first_name)
+                contact.set_lastname(new_last_name)
+                contact.set_phonenumber(new_phone_number)
+                return
