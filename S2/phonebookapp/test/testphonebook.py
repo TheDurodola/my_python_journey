@@ -64,10 +64,10 @@ class TestPhonebook(unittest.TestCase):
         self.assertEqual(('John', 'Doe', '1234567890'), self.phonebook.find_contact_via_phonenumber('1234567890'))
         self.assertIsNone(self.phonebook.find_contact_via_firstname('Ade'))
 
-    def test_that_contact_can_be_editted(self):
+    def test_that_contact_can_be_edited(self):
         self.phonebook.add_contact('John', 'Doe', '1234567890')
-        self.phonebook.edit_contact("John","Ade", "ire", "08148260470")
-
+        self.phonebook.edit_contact("John Doe","John","Ade", "08148260470")
+        self.assertEqual(('John', 'Ade', '08148260470'), self.phonebook.find_contact_via_phonenumber('08148260470'))
 
 
 
