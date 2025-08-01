@@ -10,7 +10,6 @@ class TestContact(unittest.TestCase):
         with self.assertRaises(ValueError):
             contact.set_firstname('')
 
-
     def test_thatContactLastNameCanBeAnEmptyString(self):
         contact = Contact('John', 'Doe', '1234567890')
         with self.assertRaises(ValueError):
@@ -34,7 +33,6 @@ class TestContact(unittest.TestCase):
         with self.assertRaises(ValueError):
             Contact('1', 'Durodola', '08148260470')
 
-
     def test_ThatContactLastNameCantConsistOfNumbersOnly(self):
         contact = Contact('John', 'Doe', '1234567890')
         with self.assertRaises(ValueError):
@@ -42,7 +40,6 @@ class TestContact(unittest.TestCase):
 
         with self.assertRaises(ValueError):
             Contact('John', '1', '08148260470')
-
 
     def test_thatContactPhoneNumberCantConsistOfLetters(self):
         contact = Contact('John', 'Doe', '1234567890')
@@ -58,9 +55,7 @@ class TestContact(unittest.TestCase):
         with self.assertRaises(ValueError):
             contact.set_phonenumber('+234')
 
-
-
-    def test_localNumbersMustConsistOfAtleast3Digits(self):
+    def test_localNumbersMustConsistOfAtLeast3Digits(self):
         contact = Contact('John', 'Doe', '1234567890')
         with self.assertRaises(ValueError):
             contact.set_phonenumber('00')
